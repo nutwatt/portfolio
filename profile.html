@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar"> 
+    <div class="container topbar-inner"> 
+      <div class="topbar-title"><a href="index.html">PORTFOLIO</a></div> 
+      <nav class="topbar-nav"> 
+        <a href="index.html">HOME</a> 
+        <a href="sop.html">SOP</a> 
+        <a href="profile.html">PROFILE</a> 
+        <div class="dropdown"> 
+          <a href="projects.html" class="drop-toggle">PROJECTS</a> 
+          <ul class="dropdown-menu"> 
+         <li><a href="projects.html#what-a-dream">What A Dream</a></li>
+          <li><a href="projects.html#game-design">Game Design</a></li>
+          </ul> 
+        </div> 
+        <a href="comple.html">ACHIEVEMENTS</a> 
+        <a href="other.html">OTHER</a> </nav> 
+    </div> 
+  </header> 
+
+  <main class="container profile-page">
+    <h2 class="profile-title">PROFILE</h2>
+
+    <div class="profile-grid">
+      <!-- Left column: portrait + info -->
+      <aside class="left-col">
+        <div class="portrait-frame">
+          <img src="image/portrait.png" alt="Portrait" class="portrait">
+        </div>
+        <div class="info-box">
+          <h4>Information</h4>
+          <p>Name : ณัฐวัฒน์ ศรีสวัสดิ์</p>
+          <p>Nickname : เขม</p>
+          <p>Date of Birth : 05 กุมภาพันธ์ 2550</p>
+          <p>Age : 18 ปี</p>
+          <p>Address : 143 หมู่1 ตำบลบ้านแซว อำเภอเชียงแสน จังหวัดเชียงราย</p>
+          <h4 style="margin-top:20px; margin-bottom:8px">Contact</h4>
+          <p>Phone: 0629534420</p>
+          <p>Email: kunnutwat@gmail.com</p>
+          <p>Instagram: Nattawat Srisawat</p>
+          <p>Facebook: Nattawat Srisawat</p>
+        </div>
+      </aside>
+
+      <!-- Right column: tabs across top, large panel below -->
+      <section class="right-col">
+        <div class="tabs">
+          <button class="tab-btn tab-top" data-target="skill">SKILL</button>
+          <button class="tab-btn tab-top" data-target="education">Education</button>
+        </div>
+
+        <div class="panel-box">
+          <div id="skill" class="tab-panel active">
+            <h3>Skills</h3>
+            <div class="skills-section">
+              <h4 class="pixel-subtitle">Languages</h4>
+              <div class="skills-grid">
+                <article class="skill-card">
+                  <div class="skill-logo">
+                    <img src="image/python-intro-removebg-preview.png" alt="Python logo">
+                  </div>
+                  <div class="skill-info">
+                    <h5 class="skill-name">Python</h5>
+                    <p class="skill-desc">Scripting, data handling (Pandas).</p>
+                  </div>
+                </article>
+                <article class="skill-card">
+                  <div class="skill-logo">
+                    <img src="image/C___CSharp_-removebg-preview.png" alt="C# logo">
+                  </div>
+                  <div class="skill-info">
+                    <h5 class="skill-name">C#</h5>
+                    <p class="skill-desc">Programming for Unity game development 
+                      <br>and object-oriented programming (OOP) .</p>
+                  </div>
+                </article>
+              </div>
+
+              <h4 class="pixel-subtitle" style="margin-top:22px">Tools</h4>
+              <div class="tools-grid">
+                <article class="skill-card">
+                  <div class="skill-logo">
+                    <img src="image/Unity-removebg-preview.png" alt="Unity logo">
+                  </div>
+                  <div class="skill-info">
+                    <h5 class="skill-name">Unity</h5>
+                    <p class="skill-desc">2D game, physics, UI, animation controllers, prefabs, and builds.</p>
+                  </div>
+                </article>
+                <article class="skill-card">
+                  <div class="skill-logo">
+                    <img src="image/64px-Construct_3_Logo.svg-removebg-preview.png" alt="Construct 3 logo">
+                  </div>
+                  <div class="skill-info">
+                    <h5 class="skill-name">Construct 3</h5>
+                    <p class="skill-desc">2D platformer game, animation, Block Coding.</p>
+                  </div>
+                </article>
+                <article class="skill-card">
+                  <div class="skill-logo">
+                    <img src="image/unnamed-removebg-preview.png" alt="Aseprite logo">
+                  </div>
+                  <div class="skill-info">
+                    <h5 class="skill-name">Aseprite</h5>
+                    <p class="skill-desc">Pixel art assets, sprite sheets, frame-by-frame animation.</p>
+                  </div>
+                </article>
+                <article class="skill-card">
+                  <div class="skill-logo">
+                    <img src="image/figma.png" alt="Figma logo">
+                  </div>
+                  <div class="skill-info">
+                    <h5 class="skill-name">Figma</h5>
+                    <p class="skill-desc">Game Design, UX/UI Design.</p>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+          <div id="education" class="tab-panel">
+            <h3>Education Background</h3>
+            <div class="edu-grid">
+              <article class="edu-card">
+                <div class="edu-logo">
+                  <img src="image/CSWlogo-removebg-preview.png" alt="Chiang Mai University logo">
+                </div>
+                <div class="edu-info">
+                  <h5>Chiangsaen Wittayakom School</h5>
+                  <p class="edu-details">Middle School.</p>
+                  <p class="gpa-text"> <span class="gpa-value"></span></p>
+                </div>
+              </article>
+              <article class="edu-card">
+                <div class="edu-logo">
+                  <img src="image/PCCCR-removebg-preview.png" alt="Princess Chulabhorn Science High School Chiang Rai logo">
+                </div>
+                <div class="edu-info">
+                  <h5>PCSHS Chiang Rai</h5>
+                  <p class="edu-details">Science-Mathematics curriculum, High School.</p>
+                  <p class="gpa-text">GPAX:3.97 <span class="gpa-value">-</span></p>
+                </div>
+              </article>
+            </div>
+
+            <div class="transcript-wrap">
+              <h4 class="pixel-subtitle" style="margin-top:24px">Transcript</h4>
+              <div class="transcript-panel">
+          
+                <img src="image/Transcript1.png" alt="Transcript image">
+                <img src="image/Transcript2.png" alt="Transcript image">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <script>
+    
+    // Tab switching for top tabs
+    document.querySelectorAll('.tab-top').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const target = btn.dataset.target;
+        document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+        const panel = document.getElementById(target);
+        if (panel) panel.classList.add('active');
+
+        document.querySelectorAll('.tab-top').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+      });
+    });
+
+    // default active
+    const firstTop = document.querySelector('.tab-top');
+    if (firstTop) firstTop.classList.add('active');
+  </script>
+
+  <div class="nav-buttons-wrap">
+  <div class="nav-buttons">
+    <a href="sop.html" class="prev-btn">Prev</a>
+    <a href="projects.html" class="next-btn">Next</a>
+  </div>
+</div>
+
+</body>
+</html>

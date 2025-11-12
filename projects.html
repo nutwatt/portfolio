@@ -1,0 +1,422 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+  <meta charset="utf-8" /> 
+  <meta name="viewport" content="width=device-width,initial-scale=1" /> 
+  <title>Projects — Portfolio</title> 
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="style.css"> 
+</head> 
+<body> 
+  <!-- HEADER --> 
+  <header class="topbar"> 
+    <div class="container topbar-inner"> 
+      <div class="topbar-title"><a href="index.html">PORTFOLIO</a></div> 
+      <nav class="topbar-nav"> 
+        <a href="index.html">HOME</a> 
+        <a href="sop.html">SOP</a> 
+        <a href="profile.html">PROFILE</a> 
+        <div class="dropdown"> 
+          <a href="projects.html" class="drop-toggle">PROJECTS</a> 
+          <ul class="dropdown-menu"> 
+            <li><a href="#what-a-dream" class="dropdown-link">What A Dream</a></li> 
+            <li><a href="#game-design" class="dropdown-link">Game Design</a></li> 
+          </ul> 
+        </div> 
+        <a href="comple.html">ACHIEVEMENTS</a> 
+        <a href="other.html">OTHER</a> </nav> 
+    </div> 
+  </header> 
+  <!-- MAIN CONTENT --> 
+  <main class="container project-page"> 
+    <!-- 🔹 Top section (video / demo tabs) --> 
+    <section class="project-top" id="what-a-dream"> 
+      <div class="project-title-wrap"> 
+        <h1 class="pixel-title">MY GAME PROJECT</h1>
+       
+      </div>
+      <div class="top-tabs"> 
+        <button class="top-tab active" data-content="video">GAME VIDEO</button> 
+        <button class="top-tab" data-content="playable">PLAYABLE DEMO</button> 
+      </div> 
+      <div class="top-panels"> 
+        <!-- Game video --> 
+        <div id="video" class="top-panel active"> 
+          <video class="project-trailer" src="video/WhatADream.mp4" autoplay muted loop controls playsinline width="960" height="540"></video> 
+        </div> 
+        <!-- Playable embed --> 
+        <div id="playable" class="top-panel"> 
+          <iframe title="Game Demo" src="https://itch.io/embed/4022000" width="960" height="540" frameborder="0"><a href="https://nattawat-srisawat.itch.io/what-a-dream">What A Dream by Nattawat Srisawat</a></iframe> 
+        </div> 
+      </div> 
+      <!-- Description below video/demo --> 
+      <div class="game-desc"> 
+         <h2 class="pixel-subtitle">What A Dream</h2>
+        <p> 
+          "เหลือเวลาเพียงไม่กี่วันก่อนหมดกำหนดรอบแฟ้มสะสมผลงาน นักเรียนคนหนึ่งได้หลับไปจากความเครียดและเหนื่อยล้า ได้มีความฝันแปลกประหลาด ที่พาเขาไปผจญภัยในโลกแห่งความฝัน จัดการกับอารมณ์ต่างๆ ให้ทันก่อนที่เวลาจะหมดลง!"
+          <br>
+          <br>เกมแนว 2D Shooting Boss-Rush เป็นเกมที่กระผมได้พัฒนาขึ้นด้วยตนเอง โดยเขียนโค้ด , UI รวมถึงวาดรูปและทำ Animation เอง เพื่อพัฒนาทักษะด้านการพัฒนาเกม และทำความเข้าใจองค์ประกอบต่างๆ ของการสร้างเกม
+          <br>
+          <br>โดยเกมทำให้ผมได้เรียนรู้ในเรื่องของ Save/Load Progression , Dialogue System ,UI ,Cutscene(Timeline) , Animation , Statemachine และระบบต่างๆของ Unity มากขึ้น
+        
+        </p> 
+      </div> 
+    </section> 
+    <!-- 🔹 Level Section --> 
+   <section class="project-levels"> 
+  <div class="level-panels"> 
+    <!-- Level 0 --> 
+    <div id="level-0" class="level-panel active"> 
+      <div class="level-media"> 
+        <!-- Background video --> 
+        <video class="bg-video" src="video/level0.mp4" autoplay muted loop playsinline></video> 
+        <video class="level-media" src="video/level0.mp4" autoplay muted loop playsinline ></video> 
+        <!-- Foreground content --> 
+        <div class="level-info"> 
+          <h3>Level 0</h3> 
+          <p> 
+           เป็น Tutorial Level ที่จะแนะนำระบบการเล่นต่างๆของเกม ทั้งการเคลื่อนที่ การโจมตีที่เป็นแบบชาร์จยิง และการฮิลพลังชีวิตจากการเข้า Cheat Mode แล้วกดปุ่มให้ถูกต้องตามลำดับ
+           <br>และได้สู้กับบอสที่จะเลียนแบบ การเคลื่อนที่และโจมตีของผู้เล่น 
+          </p> 
+        </div> 
+      </div> 
+    </div> 
+    <!-- Level 1 --> 
+    <div id="level-1" class="level-panel"> 
+      <div class="level-media"> 
+        <video class="bg-video" src="video/level1.mp4" autoplay muted loop playsinline></video> 
+        <video class="level-media" src="video/level1.mp4" autoplay muted loop playsinline ></video> 
+        <div class="level-info"> 
+          <h3>Level 1</h3> 
+          <p> 
+          Level นี้ผู้เล่นจะได้สู้กับ Lazy Boss ซึ่งจะไม่ทำอะไรเลยแต่หากผู้เล่นโจมตีบอสจะกระเด็นและเด้งไปมาทำความเสียหายเมื่อชนกับผู้เล่น 
+         <br>และเมื่อ Boss ได้รับความเสียหายจำนวนหนึ่งเปลือกของบอสจะแตกออกและเด้งไปมาเช่นเดียวกับ Boss
+          <br>
+          </p> 
+        </div> 
+      </div> 
+    </div> 
+    <!-- Level 2 --> 
+    <div id="level-2" class="level-panel"> 
+      <div class="level-media"> 
+        <video class="bg-video" src="video/level2.mp4" autoplay muted loop playsinline></video> 
+        <video class="level-media" src="video/level2.mp4" autoplay muted loop playsinline ></video>
+        <div class="level-info"> 
+          <h3>Level 2</h3> 
+          <p> 
+            Level นี้ Boss คือความกลัว ซึ่งจะหนีเมื่อผู้เล่นเข้าใกล้ ผู้เล่นจะต้องคอยไล่ตาม Boss กระโดด ยิง และบินเพื่อหลบสิ่งกีดขวางในขณะที่ถูกไล่ตามจาก Boss อีกตัวที่ไล่ตามหลังมา
+          </p> 
+        </div> 
+      </div> 
+    </div> 
+    <!-- Level 3 --> 
+    <div id="level-3" class="level-panel"> 
+      <div class="level-media"> 
+        <video class="bg-video" src="video/level3.mp4" autoplay muted loop playsinline></video> 
+        <video class="level-media" src="video/level3.mp4" autoplay muted loop playsinline ></video>
+        <div class="level-info"> 
+          <h3>Level 3</h3> 
+          <p> 
+           Level สุดท้ายผู้เล่นจะได้สู้กับความคาดหวัง ซึ่งใช้ Statemachine ของ Unity ที่จะแสดงพฤติกรรมต่างกันในแต่ละ animation ทำให้สามารถสร้าง Boss มีรูปแบบการเคลื่อนที่และโจมตีได้ซับซ้อนมากขึ้น
+          </p> 
+        </div> 
+      </div> 
+    </div> 
+  </div> 
+  <div class="project-top game-design-section" id="game-design"> 
+    <h1 class="pixel-title">GAME DESIGN</h1>
+    
+    <div class="design-content">
+      <h2 class="pixel-subtitle stp-title">Shawn The Pawn</h2>
+      
+      <div class="design-info">
+        <div class="info-row">
+          <h3 class="info-label">Concept</h3>
+          <p class="info-text">“คุณจะได้เล่นเป็นตัวหมาก(Pawn)ในเกมหมากรุก ที่มีระบบ Rougelike turnbase RPG 
+            <br>ที่จะให้คุณได้ วางแผน ร่ายเวทมนต์ ปราบหมากและบอสฝั่งสีดำ เพื่อพัฒนาหมากของคุณให้แข็งแกร่งขึ้น”</p>
+        </div>
+        
+        <div class="info-row">
+          <h3 class="info-label">Genre</h3>
+          <p class="info-text">Rougelike/Turn-Based Tactical RPG / Strategy</p>
+        </div>
+      </div>
+
+      <!-- Gameplay Sections -->
+      <div class="gameplay-section">
+        <h3 class="pixel-subtitle">Game Play</h3>
+        
+        <div class="gameplay-flow">
+          <!-- Shawn's move -->
+          <div class="gameplay-item">
+            <h4 class="move-label">Shawn's move</h4>
+            <div class="video-wrapper main-panel">
+              <div class="video-panel">
+                <video class="gameplay-video" src="video/Blocked.mp4" autoplay muted loop playsinline></video>
+              </div>
+              <div class="video-panel">
+                <video class="gameplay-video" src="video/Move.mp4" autoplay muted loop playsinline></video>
+              </div>
+            </div>
+            <p class="mechanic-desc">เมื่อถึงตาผู้เล่น หาก Shawn เดินแบบ Pawn ปกติ จะมีโอกาศติดศัตรูได้เนื่อจาก Pawn ไม่สามารถเดินไปด้านข้างได้ ดังนั้นหาก Shawn สามารถเดินข้างหน้าได้ ดังภาพก็จะสามารถแก้ปัญหาการเดินติดได้</p>
+          </div>
+
+          <!-- Shawn's Capture -->
+          <div class="gameplay-item">
+            <h4 class="move-label">Shawn's Capture</h4>
+            <div class="video-panel main-panel">
+              <video class="gameplay-video" src="video/Capture .mp4" autoplay muted loop playsinline></video>
+            </div>
+            <p class="mechanic-desc">การกิน(Capture) ของ Shawn จะคล้ายกับการกินแบบ Pawn ปกติ หลังจัดการศัตรูแล้วจะได้แต้มมา</p>
+          </div>
+
+          <!-- Promote -->
+          <div class="gameplay-item">
+            <h4 class="move-label">Promote</h4>
+            <div class="promote-wrapper">
+              <div class="promote-main">
+                <div class="video-panel">
+                  <video class="gameplay-video" src="video/PromoteArea.mp4" autoplay muted loop playsinline></video>
+                </div>
+                <div class="video-panel">
+                  <video class="gameplay-video" src="video/Promote.mp4" autoplay muted loop playsinline></video>
+                </div>
+              </div>
+              <div class="promote-options">
+                <div class="video-panel small">
+                  <video class="gameplay-video" src="video/Ex_passive.mp4" autoplay muted loop playsinline></video>
+                </div>
+                <div  class="video-panel small">
+                  <video id="ms" class="gameplay-video" src="video/ChangeMoves.mp4" autoplay muted loop playsinline></video  >
+                </div>
+                <div class="video-panel small">
+                  <video class="gameplay-video" src="video/Fire ball.mp4" autoplay muted loop playsinline></video>
+                </div>
+                <div class="video-panel small">
+                  <video class="gameplay-video" src="video/TP.mp4" autoplay muted loop playsinline></video>
+                </div>
+              </div>
+            </div>
+            <p class="mechanic-desc">การโปรโมต (Promote) จะเกิดขึ้นเมื่อ shawn เดินไปถึงแถวสุดท้ายของฝั่งตรงข้าม (Rank 8 ) เมื่อ Promote จะมีการ์ดพัฒนาทักษะสุ่มมาให้เลือก<br>โดยแบ่งเป็นสามประเภท คือ 
+              <br>
+              <br> > การ์ด Skills ที่จะเพิ่มทางเลือกการโจมตีและการเคลื่อนที่แบบใหม่ให้ในตาของผู้เล่น 
+              <br> เช่น Fire ball หรือ Dash
+              <br> 
+              <br>> การ์ด Passive ที่จะทำให้การโจมตีและการเคลื่อนที่ของผู้เล่นแข็งแกร่งมากขึ้น
+               <br>เช่น passive ที่เมื่อผู้เล่นเลือกเดินเป็นทางตรงจะมีดาบพุ่งไปข้างหน้าสร้างความเสียหายด้านหน้าอีก 1 ช่อง
+              <br>
+              <br>> การ์ด Moveset  ที่จะเปลี่ยนรูปแบบการเคลื่อนที่ของ Shawn 
+              <br>เช่น Knight Moveset จะเปลี่ยนให้ Shawm เดินแบบม้า(Knight)
+            </p>
+          </div>
+
+          <!-- Enemy Move -->
+          <div class="gameplay-item">
+            <h4 class="move-label">Enemy Move</h4>
+            <div class="video-panel main-panel">
+              <video class="gameplay-video" src="video/Enemymove.mp4" autoplay muted loop playsinline></video>
+            </div>
+            <p class="mechanic-desc">ศัตรูจะแสดงช่องสีแดงที่เป็นระยะโจมตีของศัตรู</p>
+          </div>
+           <div class="nav-buttons-wrap">
+
+      </body>
+  <div class="nav-buttons-wrap">
+  <div class="nav-buttons">
+    <a href="profile.html" class="prev-btn" >Prev</a>
+    
+    <a href="comple.html" class="next-btn">Next</a>
+    </div>
+  </div>
+
+          <script>
+          // === Top tabs (video / playable) ===
+          document.querySelectorAll('.top-tab').forEach(btn => {
+            btn.addEventListener('click', () => {
+              document.querySelectorAll('.top-tab').forEach(b => b.classList.remove('active'));
+              document.querySelectorAll('.top-panel').forEach(p => p.classList.remove('active'));
+              btn.classList.add('active');
+              const target = document.getElementById(btn.dataset.content);
+              if (target) target.classList.add('active');
+            });
+          });
+
+          // === Level tabs (if present) ===
+          document.querySelectorAll('.level-tab').forEach(btn => {
+            btn.addEventListener('click', () => {
+              document.querySelectorAll('.level-tab').forEach(b => b.classList.remove('active'));
+              document.querySelectorAll('.level-panel').forEach(p => p.classList.remove('active'));
+              btn.classList.add('active');
+              const id = 'level-' + btn.dataset.level;
+              const target = document.getElementById(id);
+              if (target) target.classList.add('active');
+            });
+          });
+
+          // === Dropdown toggle & smooth scroll for header links ===
+          (function(){
+            const dropdown = document.querySelector('.topbar .dropdown');
+            if (!dropdown) return;
+            const toggle = dropdown.querySelector('.drop-toggle');
+            if (!toggle) return;
+            toggle.addEventListener('click', (e) => {
+              if (toggle.getAttribute('href') && (toggle.getAttribute('href').endsWith('projects.html') || toggle.getAttribute('href') === '#')) {
+                e.preventDefault();
+                dropdown.classList.toggle('open');
+              }
+            });
+            document.addEventListener('click', (e) => {
+              if (!dropdown.contains(e.target)) dropdown.classList.remove('open');
+            });
+            dropdown.querySelectorAll('.dropdown-link').forEach(link => {
+              link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const target = document.querySelector(link.getAttribute('href'));
+                dropdown.classList.remove('open');
+                if (target) target.scrollIntoView({behavior:'smooth', block:'start'});
+              });
+            });
+          })();
+
+          // === Pixelated video renderer: one canvas per .video-panel to preserve nearest-neighbor scaling ===
+          function createPixelRenderer(panel) {
+            if (!panel) return null;
+            const video = panel.querySelector('video');
+            if (!video) return null;
+            if (panel.__pixelRenderer) return panel.__pixelRenderer; // already created
+
+            // playback speed: allow override via data-speed on panel or video; default 0.75
+            const speedAttr = panel.dataset.speed || video.dataset.speed;
+            const speed = speedAttr ? parseFloat(speedAttr) : 0.75;
+            try { video.playbackRate = speed; } catch(e) {}
+
+            // ensure panel can contain absolutely positioned children
+            const panelStyle = getComputedStyle(panel);
+            if (panelStyle.position === 'static') panel.style.position = 'relative';
+
+            // create canvas that will sit on top of the panel
+            const canvas = document.createElement('canvas');
+            canvas.className = 'pixel-canvas';
+            canvas.style.position = 'absolute';
+            canvas.style.top = '0';
+            canvas.style.left = '0';
+            canvas.style.width = '100%';
+            canvas.style.height = '100%';
+            canvas.style.display = 'block';
+            canvas.style.pointerEvents = 'none';
+            // choose canvas background: allow per-panel override via data-bg="transparent"
+            const bgPref = (panel.dataset.bg || '').toLowerCase();
+            canvas.style.background = bgPref === 'transparent' ? 'transparent' : 'black';
+            panel.appendChild(canvas);
+
+            const ctx = canvas.getContext('2d');
+            ctx.imageSmoothingEnabled = false;
+
+            let rafId = null;
+
+            function resizeCanvas() {
+              const rect = panel.getBoundingClientRect();
+              const DPR = window.devicePixelRatio || 1;
+              const w = Math.max(1, Math.round(rect.width * DPR));
+              const h = Math.max(1, Math.round(rect.height * DPR));
+              // update internal resolution if changed
+              if (canvas.width !== w || canvas.height !== h) {
+                canvas.width = w;
+                canvas.height = h;
+              }
+              // keep CSS size matching panel (helps layout and HiDPI scaling)
+              canvas.style.width = rect.width + 'px';
+              canvas.style.height = rect.height + 'px';
+            }
+
+            function drawFrame() {
+              if (!canvas || !ctx) return;
+              if (video.readyState < 2 || video.videoWidth === 0 || video.videoHeight === 0) {
+                rafId = requestAnimationFrame(drawFrame);
+                return;
+              }
+              try {
+                ctx.clearRect(0,0,canvas.width,canvas.height);
+                ctx.imageSmoothingEnabled = false;
+                // preserve aspect ratio (contain) so the video does not stretch
+                const vw = video.videoWidth;
+                const vh = video.videoHeight;
+                const cw = canvas.width;
+                const ch = canvas.height;
+                const scale = Math.min(cw / vw, ch / vh);
+                const dw = Math.max(1, Math.round(vw * scale));
+                const dh = Math.max(1, Math.round(vh * scale));
+                const dx = Math.round((cw - dw) / 2);
+                const dy = Math.round((ch - dh) / 2);
+                // draw the video centered with nearest-neighbor scaling
+                ctx.drawImage(video, 0, 0, vw, vh, dx, dy, dw, dh);
+              } catch(e) {
+                // ignore draw errors (cross-origin, etc.)
+              }
+              rafId = requestAnimationFrame(drawFrame);
+            }
+
+            function start() {
+              if (rafId) return;
+              resizeCanvas();
+              rafId = requestAnimationFrame(drawFrame);
+            }
+            function stop() {
+              if (rafId) cancelAnimationFrame(rafId);
+              rafId = null;
+            }
+
+            // make the source video invisible but keep it playing so drawImage can sample frames
+            video.style.position = 'absolute';
+            video.style.top = '0';
+            video.style.left = '0';
+            video.style.width = '100%';
+            video.style.height = '100%';
+            video.style.opacity = '0';
+            video.style.pointerEvents = 'none';
+            video.style.objectFit = 'cover';
+            // ensure the video element itself doesn't show a white background
+            video.style.background = 'transparent';
+
+            window.addEventListener('resize', resizeCanvas);
+            video.addEventListener('loadedmetadata', resizeCanvas);
+            video.addEventListener('play', start);
+            video.addEventListener('pause', stop);
+            video.addEventListener('ended', stop);
+
+            if (!video.paused && !video.ended) start();
+
+            const api = { panel, video, canvas, start, stop, resize: resizeCanvas };
+            panel.__pixelRenderer = api;
+            return api;
+          }
+
+          // initialize renderers for existing panels
+          document.querySelectorAll('.video-panel').forEach(panel => createPixelRenderer(panel));
+
+          // observe panels and play/pause when they enter/leave view
+          const panelObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+              const panel = entry.target;
+              const video = panel.querySelector('video');
+              if (!video) return;
+              if (entry.isIntersecting) {
+                video.play().catch(()=>{});
+                if (panel.__pixelRenderer) panel.__pixelRenderer.start();
+              } else {
+                video.pause();
+                if (panel.__pixelRenderer) panel.__pixelRenderer.stop();
+              }
+            });
+          }, { threshold: 0.4 });
+
+          document.querySelectorAll('.video-panel').forEach(panel => panelObserver.observe(panel)); 
+            const video = document.getElementById('ms');
+             video.playbackRate = 0.2;
+          </script>
+
+        
+       
+            
+       
+          </html>

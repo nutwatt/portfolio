@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Other Certificates — Portfolio</title>
+
+  <!-- Fonts + CSS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head> 
+<header class="topbar"> 
+    <div class="container topbar-inner"> 
+      <div class="topbar-title"><a href="index.html">PORTFOLIO</a></div> 
+      <nav class="topbar-nav"> 
+        <a href="index.html">HOME</a> 
+        <a href="sop.html">SOP</a> 
+        <a href="profile.html">PROFILE</a> 
+        <div class="dropdown"> 
+          <a href="projects.html" class="drop-toggle">PROJECTS</a> 
+          <ul class="dropdown-menu"> 
+            <li><a href="projects.html#what-a-dream">What A Dream</a></li>
+            <li><a href="projects.html#game-design">Game Design</a></li>
+          </ul> 
+        </div> 
+        <a href="comple.html">ACHIEVEMENTS</a> 
+        <a href="other.html">OTHER</a> </nav> 
+    </div> 
+  </header> 
+  <body> 
+     <h2 class="pixel-title" style="margin-top:248px; margin-bottom:42px;">VOLUNTEER ACTIVITYS</h2>
+   <section class="container">
+
+      
+    
+          <div class="certificate-grid">
+            <div class="certificate-card">
+              <div class="cert-thumb"><img src="image/IMG_1660.jpg" alt="Certificate 1"></div>
+             
+            </div>
+
+            <div class="certificate-card">
+              <div class="cert-thumb"><img src="image/IMG_1661.jpg" alt="Certificate 2"></div>
+              
+            </div>
+
+            <div class="certificate-card">
+              <div class="cert-thumb"><img src="image/IMG_1662.jpg" alt="Certificate 3"></div>
+             
+            </div>
+           
+           
+          </div>
+          <div class="cert-desc">กระผมได้เข้าร่วมกิจกรรมอาสาสมัครของทางโรงเรียน ที่จัดขึ้นเพื่อช่วยเหลือชุมชนในท้องถิ่น
+             โดยให้อาสาสมัคร เข้าไปให้ความรู้แก่นโรงเรียนประถมในชุมชน โดยกระผมได้รับผิดชอบฐานคอมพิวเตอร์ที่จะสอนให้เด็ก เข้าใจกระบวนการคิดของคอมพิวเตอร์ผ่าน เกมเรียง Flowchart  
+
+           </div>
+          
+    </section>
+
+     <section class="container">
+
+      
+      <h2 class="pixel-title" style="margin-top:248px; margin-bottom:42px;">OTHER CERTIFICATES</h2>
+          <div class="certificate-grid">
+            <div class="certificate-card">
+              <div class="cert-thumb"><img src="image/cer/GameDesign.png" alt="Certificate 1"></div>
+              <div class="cert-desc">กระผมได้เข้าร่วม Workshop Game Designer ที่ทำให้กระผมได้เข้าใจในกระบวนการออกแบบเกมมากขึ้น
+                <br>ตั้งแต่ core game loop ,rule ,level design ไปจนถึงการเขียน Game Design Document
+            </div>
+            </div>
+
+            <div class="certificate-card">
+              <div class="cert-thumb"><img src="image/cer/ProjectPre.png" alt="Certificate 2"></div>
+                <div class="cert-desc">กระผมได้เข้าร่วมกิจกรรมการนำเสนอโครงงาน โดยได้นำเสนอโครงงานเป็นภาษาอังกฤษ
+                  <br> ทำให้ได้ฝึกทักษะการสื่อสารภาษาอังกฤษในระดับวิชาการ
+            </div>
+            </div>
+
+            <div class="certificate-card">
+              <div class="cert-thumb"><img src="image/cer/Buddy.png" alt="Certificate 3"></div>
+               <div class="cert-desc">กระผมรับหน้าที่เป็น buddy ให้กับนักเรียนแลกเปลี่ยนจากญี่ปุ่น ทำให้ผมได้พัฒนาทั้งการสื่อสารภาษาอังกฤษและญี่ปุ่น
+            </div>
+            </div>
+
+          </div>
+           
+         
+          
+          
+    </section>
+
+
+</body>
+  <div class="nav-buttons-wrap">
+  <div class="nav-buttons">
+    <a href="comple.html" class="prev-btn" >Prev</a>
+    
+    <a href="index.html" class="next-btn">Home</a>
+    </div>
+  </div>
+<script>
+    
+    // Tab switching for top tabs
+    document.querySelectorAll('.tab-top').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const target = btn.dataset.target;
+        document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+        const panel = document.getElementById(target);
+        if (panel) panel.classList.add('active');
+
+        document.querySelectorAll('.tab-top').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+      });
+    });
+
+    // default active
+    const firstTop = document.querySelector('.tab-top');
+    if (firstTop) firstTop.classList.add('active');
+  </script>
+
+</html>
